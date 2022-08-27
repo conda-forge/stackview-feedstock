@@ -25,6 +25,8 @@ requirements:
     - ipywidgets
     - scikit-image
     - ipyevents
+    - toolz
+    - matplotlib
 
 test:
   imports:
