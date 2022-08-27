@@ -26,7 +26,7 @@ requirements:
     - scikit-image
     - ipyevents
     - toolz
-    - matplotlib
+    - matplotlib-base
 
 test:
   imports:
