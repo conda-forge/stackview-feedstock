@@ -1,5 +1,5 @@
 {% set name = "stackview" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/stackview-{{ version }}.tar.gz
-  sha256: 269d4e8e47f13835fcad15b65d0dc1ac9088bc3bf852f8063eac55e149ffb6aa
+  sha256: 71fffbebd5e6f69804c2c600f64026d740a361ddf3da3068c819535efd36f8ce
 
 build:
   noarch: python
@@ -25,6 +25,8 @@ requirements:
     - ipywidgets
     - scikit-image
     - ipyevents
+    - toolz
+    - matplotlib-base
 
 test:
   imports:
