@@ -27,6 +27,7 @@ requirements:
     - ipyevents
     - toolz
     - matplotlib-base
+    - ipykernel
 
 test:
   imports:
