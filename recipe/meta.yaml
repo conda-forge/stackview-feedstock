@@ -1,5 +1,5 @@
 {% set name = "stackview" %}
-{% set version = "0.5.2" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/stackview-{{ version }}.tar.gz
-  sha256: 7816971af8af85ec83754c3669168644ca42bf2c9791509da9eb99aa49bab681
+  sha256: 14ab8ace7448d4720d78b196be011c594667ec8a5e84ca678adbf30ab95c968f
 
 build:
   noarch: python
@@ -27,6 +27,7 @@ requirements:
     - ipyevents
     - toolz
     - matplotlib-base
+    - ipykernel
 
 test:
   imports:

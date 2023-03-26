@@ -1,11 +1,11 @@
-About stackview
-===============
+About stackview-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/stackview-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/haesleinhuepf/stackview
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/stackview-feedstock/blob/main/LICENSE.txt)
 
 Summary: Interactive image stack viewing in jupyter notebooks based on ipycanvas and ipywidgets
 
