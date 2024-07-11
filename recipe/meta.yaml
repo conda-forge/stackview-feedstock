@@ -28,6 +28,7 @@ requirements:
     - toolz
     - matplotlib-base
     - ipykernel
+    - ipympl
 
 test:
   imports:
