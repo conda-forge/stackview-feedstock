@@ -6,22 +6,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/stackview-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/stackview-{{ version }}.tar.gz
   sha256: e93710366a37872c065d81c2f094be8489afbf9390764edf0a7b9d04be861d10
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools
   run:
     - numpy
-    - python >=3.7
+    - python >={{ python_min }}
     - ipycanvas
     - ipywidgets
     - scikit-image
@@ -40,6 +40,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/haesleinhuepf/stackview
