@@ -30,6 +30,7 @@ requirements:
     - matplotlib-base
     - ipykernel
     - ipympl
+    - wordcloud
 
 test:
   imports:
