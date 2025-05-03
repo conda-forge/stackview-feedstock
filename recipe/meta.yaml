@@ -1,5 +1,5 @@
 {% set name = "stackview" %}
-{% set version = "0.16.1" %}
+{% set version = "0.17.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/stackview-{{ version }}.tar.gz
-  sha256: e51b22967e4506e8950ff6178045f24186ac4542d31540737485c319f9acd088
+  sha256: 0d237284885a9fdc25d69a3f669a5a123fd1d64f229e672e8b2101961fdd8db0
 
 build:
   noarch: python
